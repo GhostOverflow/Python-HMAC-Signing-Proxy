@@ -75,7 +75,7 @@ class HMACProxyHandler(http.server.SimpleHTTPRequestHandler):
         pass  # Suppress default logging
 
 if __name__ == "__main__":
-    print(f"[*] HMAC Proxy for GoPhish Webhook")
+    print(f"[*] HMAC Proxy for endpoints and webhooks")
     print(f"[*] Listening on: http://127.0.0.1:{PROXY_PORT}")
     print(f"[*] Forwarding to: {TARGET_HOST}")
     print(f"[*] Secret key: {SECRET_KEY.decode()}\n")
