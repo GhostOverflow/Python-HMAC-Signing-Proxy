@@ -71,7 +71,8 @@ The proxy will:
     Forward to TARGET_HOST/your/path
     Return the response to your client
 
-How It Works
+## How It Works
+
 HMAC Signature Generation
 ```
 signature = hmac.new(SECRET_KEY, request_body, hashlib.sha256).hexdigest()
@@ -106,9 +107,6 @@ Example Output
 [+] Response: 200
 [+] Response body: {"success":true,"message":"Webhook processed"}
 ```
-
-Troubleshooting
-Port already in use
 
 Pull requests welcome! For major changes, please open an issue first.
 Disclaimer
